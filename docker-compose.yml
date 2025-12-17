@@ -1,0 +1,17 @@
+services:
+  app:
+    image: pki-app
+    build: .
+    container_name: pki-app-1
+    ports:
+      - "8080:8080"
+    volumes:
+      - seed-data:/data
+      - cron-data:/cron
+    environment:
+      - TZ=UTC
+    restart: unless-stopped
+
+volumes:
+  seed-data:
+  cron-data:
