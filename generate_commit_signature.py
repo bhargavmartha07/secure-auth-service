@@ -3,7 +3,7 @@ from cryptography.hazmat.primitives import hashes, serialization
 from cryptography.hazmat.primitives.asymmetric import padding
 
 # 🔴 PASTE YOUR COMMIT HASH HERE
-COMMIT_HASH = "b661c87bed5504e87d68ca96bd5d017f5e9449f8"
+COMMIT_HASH = "6cbbc9b52c3a9ccc6672331dab10de8e09cdd78f"
 
 # Load student private key
 with open("student_private.pem", "rb") as f:
